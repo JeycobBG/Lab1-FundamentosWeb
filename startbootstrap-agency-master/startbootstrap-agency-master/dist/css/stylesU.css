@@ -1,0 +1,183 @@
+/* CSS personalizado para Universidad Nacional de Costa Rica */
+:root {
+  /* Colores UNA */
+  --una-red: #CD1719;
+  --una-blue: #034991;
+  --una-gray: #A7A7A9;
+  --una-light: #f8f9fa;
+  --una-dark: #212529;
+  
+  /* Sobrescribir colores primarios de Bootstrap */
+  --bs-primary: var(--una-red);
+  --bs-primary-rgb: 205, 23, 25;
+  --bs-link-color: var(--una-red);
+  --bs-link-hover-color: #a11214;
+  --bs-primary-bg-subtle: #f8d7da;
+}
+
+/* Asegurar que los textos de los botones sean blancos */
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+  color: white !important;
+}
+
+/* Botones primarios */
+.btn-primary {
+  --bs-btn-bg: var(--una-red);
+  --bs-btn-border-color: var(--una-red);
+  --bs-btn-hover-bg: #a11214;
+  --bs-btn-hover-border-color: #910f11;
+  --bs-btn-active-bg: #910f11;
+  --bs-btn-active-border-color: #810d0f;
+  --bs-btn-disabled-bg: var(--una-red);
+  --bs-btn-disabled-border-color: var(--una-red);
+}
+
+/* Botones secundarios */
+.btn-outline-primary {
+  --bs-btn-color: var(--una-red);
+  --bs-btn-border-color: var(--una-red);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--una-red);
+  --bs-btn-hover-border-color: var(--una-red);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--una-red);
+  --bs-btn-active-border-color: var(--una-red);
+  --bs-btn-disabled-color: var(--una-red);
+  --bs-btn-disabled-border-color: var(--una-red);
+}
+
+/* Navbar */
+.navbar-dark {
+  background-color: var(--una-blue) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: white;
+}
+
+/* Masthead (header) */
+.masthead {
+  background: linear-gradient(to bottom, var(--una-blue) 0%, rgba(3, 73, 145, 0.8) 100%);
+}
+
+.masthead-subheading {
+  color: white;
+}
+
+.masthead-heading {
+  color: white;
+}
+
+/* Secciones */
+.section-heading {
+  color: var(--una-blue);
+}
+
+.section-subheading {
+  color: var(--una-gray);
+}
+
+/* Portfolio */
+.portfolio-caption-heading {
+  color: var(--una-blue);
+}
+
+.portfolio-link:hover {
+  background-color: rgba(205, 23, 25, 0.8);
+}
+
+/* Contact section */
+#contact {
+  background-color: var(--una-light);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--una-blue) !important;
+  color: white;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.btn-social {
+  background-color: var(--una-red);
+  border-color: var(--una-red);
+  color: white !important;
+}
+
+.btn-social:hover {
+  background-color: #a11214;
+  border-color: #a11214;
+  color: white !important;
+}
+
+/* Modales */
+.portfolio-modal .modal-content {
+  border-top: 5px solid var(--una-red);
+}
+
+.portfolio-modal .btn-primary {
+  background-color: var(--una-blue);
+  border-color: var(--una-blue);
+}
+
+.portfolio-modal .btn-primary:hover {
+  background-color: #023872;
+  border-color: #023872;
+}
+
+/* Formularios */
+.form-control:focus {
+  border-color: var(--una-red);
+  box-shadow: 0 0 0 0.25rem rgba(205, 23, 25, 0.25);
+}
+
+/* Mejoras de accesibilidad y estética general */
+.text-muted {
+  color: var(--una-gray) !important;
+}
+
+.highlight-una {
+  color: var(--una-red);
+}
+
+.bg-una-light {
+  background-color: var(--una-light);
+}
+
+.border-una {
+  border-color: var(--una-blue) !important;
+}
+
+/* Botones en el footer */
+.footer .btn-social {
+  background-color: var(--una-red);
+}
+
+/* Asegurar que todos los botones primarios usen el rojo UNA */
+.btn-primary, 
+.btn-primary:active, 
+.btn-primary:focus {
+  background-color: var(--una-red);
+  border-color: var(--una-red);
+}
+
+/* Cambiar el color del texto de los enlaces en todo el sitio */
+a {
+  color: var(--una-red);
+}
+
+a:hover {
+  color: #a11214;
+}
