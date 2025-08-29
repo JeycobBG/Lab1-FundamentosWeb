@@ -1,0 +1,15 @@
+$primary: #CD1719; // Rojo UNA
+$secondary: #034991; // Azul UNA
+$gray-una: #A7A7A9; // Gris UNA
+
+body {
+    background-color: $gray-una;
+}
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+}
